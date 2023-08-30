@@ -5,7 +5,7 @@ import fig from '../Assets/Figma.png'
 import linkedin from '../Assets/Linkedin.png'
 import "react-step-progress-bar/styles.css";
 import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
-function Header({handleLeft,handleRight}) {
+function Header({handleLeft,handleRight,percent}) {
   return (
     <>
     <div className='flex flex-col items-center w-[50px] gap-[15px] fixed z-20'>
@@ -29,7 +29,7 @@ function Header({handleLeft,handleRight}) {
       </div> 
      <div className='w-[100%]'>
      <ProgressBar
-        percent={25}
+        percent={percent}
         filledBackground="linear-gradient(to right, #9C4BB4, #f0bb31)"
       />
      </div>
