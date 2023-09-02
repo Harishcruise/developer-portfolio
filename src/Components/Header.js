@@ -10,9 +10,9 @@ function Header({handleLeft,handleRight,percent}) {
     <>
     <div className='flex flex-col items-center w-[50px] gap-[15px] fixed z-20'>
         <div className='w-[1px] h-[200px] bg-[#ABB2BF]'></div>
-        <img src={git} alt='git' className=' hover:cursor-pointer hover:scale-125 transition-transform' />
-        <img src={fig} alt='fig' className=' hover:cursor-pointer hover:scale-125 transition-transform' />
-        <img src={linkedin} alt='linkin' className=' hover:cursor-pointer hover:scale-125 transition-transform' />
+        <img src={git} alt='git' onClick={()=>{window.open("https://github.com/Harishcruise",'_blank')}}  className=' hover:cursor-pointer hover:scale-125 transition-transform' />
+        <img src={fig} alt='fig' onClick={()=>{window.open("https://www.linkedin.com/in/harish-kumaravel/",'_blank')}}  className=' hover:cursor-pointer hover:scale-125 transition-transform' />
+        <img src={linkedin} alt='linkin' onClick={()=>{window.open("https://www.linkedin.com/in/harish-kumaravel/",'_blank')}} className=' hover:cursor-pointer hover:scale-125 transition-transform' />
     </div>
 
   
