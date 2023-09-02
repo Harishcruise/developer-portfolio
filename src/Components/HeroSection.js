@@ -1,6 +1,9 @@
 import React from 'react'
 
 function HeroSection() {
+  function previewFile() {
+    window.open("https://drive.google.com/file/d/12HMDFl9glxw76xlKTVNpUQgBbv-wVGR0/view?usp=sharing");
+  }
   return (
     <>
         <div className='flex flex-col text-white gap-2 w-[100%]'>
@@ -12,7 +15,7 @@ function HeroSection() {
         
         </div>
 
-        <div class=" mr-60 hover:cursor-pointer relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
+        <div onClick={previewFile} class=" mr-60 hover:cursor-pointer relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
         <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-gradient-to-r from-[#9C4BB4] to-[#f0bb31] rounded-full group-hover:w-56 group-hover:h-56"></span>
         <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
         <p style={{fontFamily:"barlow",fontSize:"20px",position:"relative"}}>Get My Resume</p>
