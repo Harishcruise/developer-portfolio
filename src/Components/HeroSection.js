@@ -1,4 +1,5 @@
 import React from 'react'
+import dp from '../Assets/dp.jpg'
 
 function HeroSection() {
   function previewFile() {
@@ -11,8 +12,8 @@ function HeroSection() {
         <p style={{fontFamily:"barlow",fontSize:"24px",fontWeight:"400",width:"90%",lineHeight:"30px",color:"#B5BAC4"}}>With a passion for crafting seamless digital solutions, I love turning ideas into functional, user-friendly applications.</p>
         
         <div className='flex w-[100%] items-center justify-between'>
-        <div className='w-[625px] h-[380px] bg-[#373B44] rounded border border-[#444955]'>
-        
+        <div  className='w-[625px]   bg-[#373B44] rounded border border-[#444955]'>
+        <img alt='' src={dp}  className=' rounded ' />
         </div>
 
         <div onClick={previewFile} class=" mr-60 hover:cursor-pointer relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">

@@ -2,8 +2,8 @@ import React from 'react'
 
 function ProjectCard({style}) {
   return (
-    <div style={style} className='w-[575px] h-[450px] bg-gray-800 rounded border border-[#444955]'>
-         <img alt='' src='https://wallpapers.com/images/featured/4k-oaax18kaapkokaro.jpg' className='w-[100%] h-[57%] rounded border border-[#444955] opacity-50 hover:opacity-100 transition-opacity'/>
+    <div style={style} className='w-[575px] h-[430px] bg-gray-800 rounded border border-[#444955]'>
+         <img alt='' src='https://wallpapers.com/images/featured/4k-oaax18kaapkokaro.jpg' className='w-[100%] h-[55%] rounded border border-[#444955] opacity-50 hover:opacity-100 transition-opacity'/>
          
          <div className='w-[100%]'>
 
