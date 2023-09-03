@@ -19,7 +19,7 @@ function Header({handleLeft,handleRight,percent}) {
   
     <div className='z-10 flex items-center flex-col py-4 px-32 gap-4 w-[100%] bg-[#191B1F] fixed'>
     <div className='grid grid-flow-col items-center w-[100%] justify-items-stretch'>
-    <div className='w-36 h-12 text-white bg-gray-800 rounded-[40px] border border-[#444955] flex items-center justify-center justify-self-end'>
+    <div className='w-36 h-12 text-white bg-gray-800 rounded-[40px] border border-[#444955] flex items-center justify-center justify-self-end hover:scale-110 transition-transform hover:cursor-pointer'>
         <p style={{fontFamily:"barlow",fontSize:"20px"}}>Harish</p>
      </div> 
 

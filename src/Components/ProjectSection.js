@@ -11,7 +11,7 @@ import junglii from '../Assets/junglie.png'
 const data = [
   {
   name:"Upscale",
-  desc:"The proposed application used React Native and NestJS to solve two major issues that the customers face which are confusion and feeling overwhelmed when choosing courses from existing platforms.",
+  desc:"Built a react native mobile application with Nest Js, to provide Course road map to the customer in the field of Information technology.",
   link:"https://github.com/Harishcruise/Upscale",
   img:upscale
   },
@@ -23,14 +23,14 @@ const data = [
     },
     {
       name:"Merge Music (Music API)",
-      desc:"We created a back End system to convert music libraries from one platform to another like importing libraries form youtube music library to spotify using node js",
+      desc:"Created a backEnd system to convert music libraries from one platform to another like importing libraries form youtube music library to spotify using Node js.",
       link:"https://github.com/Harishcruise/mergemusic",
       img:"https://nordicapis.com/wp-content/uploads/7-Music-Streaming-APIs.png"
       },
       {
         name:"The Junglii",
         desc:"Developed a booking system using react for a Indoor petting zone concept along with exotic pets and consulting.",
-        link:"https://github.com/Harishcruise/mergemusic",
+        link:"https://github.com/Harishcruise/thejunglii",
         img:junglii
         },
 ]

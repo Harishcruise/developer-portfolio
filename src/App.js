@@ -83,6 +83,7 @@ function App() {
 
   return (
    <>
+   <div className="cursor" />
    <Header handleLeft={scrollHandleLeft} handleRight={scrollHandleRight} percent={percent}/>
     <div className='flex flex-col items-center pt-4 px-32 gap-28 pb-20  overflow-scroll scroll-hide '>
     <div ref={scrollToRef1}>

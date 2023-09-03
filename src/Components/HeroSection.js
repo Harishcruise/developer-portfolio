@@ -13,7 +13,7 @@ function HeroSection() {
         
         <div className='flex w-[100%] items-center justify-between'>
         <div  className='w-[625px]   bg-[#373B44] rounded border border-[#444955]'>
-        <img alt='' src={dp}  className=' rounded ' />
+        <img alt='' src={dp}  className=' rounded grayscale-[100%] hover:grayscale-0 transition-all' />
         </div>
 
         <div onClick={previewFile} class=" mr-60 hover:cursor-pointer relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
