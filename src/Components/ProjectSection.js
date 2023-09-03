@@ -4,6 +4,36 @@ import ProjectCard from './ProjectCard';
 import ScrollCarousel from 'scroll-carousel';
 import 'scroll-carousel/dist/scroll.carousel.min.css'
 import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
+import upscale from '../Assets/upscale.png'
+import portal from '../Assets/portal.png'
+import junglii from '../Assets/junglie.png'
+
+const data = [
+  {
+  name:"Upscale",
+  desc:"The proposed application used React Native and NestJS to solve two major issues that the customers face which are confusion and feeling overwhelmed when choosing courses from existing platforms.",
+  link:"https://github.com/Harishcruise/Upscale",
+  img:upscale
+  },
+  {
+    name:"SAP Master Portal",
+    desc:"Constructed and maintained a comprehensive SAP portal with Angular JS and REST APIs, enabling seamless data updates on the SAP master database.",
+    link:"https://github.com/Harishcruise/customerPortal-master",
+    img:portal
+    },
+    {
+      name:"Merge Music (Music API)",
+      desc:"We created a back End system to convert music libraries from one platform to another like importing libraries form youtube music library to spotify using node js",
+      link:"https://github.com/Harishcruise/mergemusic",
+      img:"https://nordicapis.com/wp-content/uploads/7-Music-Streaming-APIs.png"
+      },
+      {
+        name:"The Junglii",
+        desc:"Developed a booking system using react for a Indoor petting zone concept along with exotic pets and consulting.",
+        link:"https://github.com/Harishcruise/mergemusic",
+        img:junglii
+        },
+]
 
 function ProjectSection() {
   new ScrollCarousel(".my-carousel", {
@@ -20,9 +50,9 @@ function ProjectSection() {
         
         <div className='flex flex-wrap w-[100%] items-center pt-4 gap-28 overflow-x-scroll scroll-hide'>
         {/* <FiArrowLeftCircle size={30} color='gray' className=' hover:cursor-pointer hover:scale-125 transition-transform absolute'/> */}
-        <ProjectCard/>
-        <ProjectCard/>
-        <ProjectCard/>
+        {data.map((item)=>
+        <ProjectCard name={item.name} desc={item.desc} link={item.link} img={item.img}/>
+        )}
         {/* <FiArrowRightCircle size={30} color='gray'  className=' hover:cursor-pointer hover:scale-125 transition-transform absolute left-[100%]' /> */}
 
         </div>
