@@ -3,10 +3,10 @@ import Header from './Components/Header';
 import HeroSection from './Components/HeroSection';
 import ProjectSection from './Components/ProjectSection';
 import React, {useEffect, useRef, useState} from 'react';
-import CustomCursor from './Assets/cursor.svg'
 import WorkExperienceSection from './Components/WorkExperienceSection';
 import Footer from './Components/Footer';
 import loader from './Assets/Loader.gif'
+import MySkillSection from './Components/MySkillSection';
 
 function App() {
 
@@ -111,6 +111,8 @@ function App() {
     <div ref={scrollToRef1}>
     </div>
      <HeroSection/>
+
+     <MySkillSection/>
      
      <div ref={scrollToRef2}>
      </div>
