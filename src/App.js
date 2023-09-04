@@ -3,9 +3,16 @@ import Header from './Components/Header';
 import HeroSection from './Components/HeroSection';
 import ProjectSection from './Components/ProjectSection';
 import React, {useEffect, useRef, useState} from 'react';
+import CustomCursor from './Assets/cursor.svg'
 import WorkExperienceSection from './Components/WorkExperienceSection';
 
 function App() {
+
+  const [showMobileWarning, setShowMobileWarning] = useState(false)
+  useEffect(() => {
+    if(window.innerWidth <= 800)
+      setShowMobileWarning(true)
+  }, [])
 
   const scrollToRef1 = useRef();
   const scrollToRef2 = useRef();
@@ -83,7 +90,16 @@ function App() {
 
   return (
    <>
-   <div className="cursor" />
+   {showMobileWarning ? <div className='flex w-[100%] h-[800px] items-center justify-center'>
+    <div class=" hover:cursor-pointer relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
+        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-gradient-to-r from-[#9C4BB4] to-[#f0bb31] rounded-full group-hover:w-56 group-hover:h-56"></span>
+        <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+        <p style={{fontFamily:"barlow",fontSize:"20px",position:"relative"}}>View in Desktop View</p>
+        </div>
+   </div> :
+
+   
+   <div >
    <Header handleLeft={scrollHandleLeft} handleRight={scrollHandleRight} percent={percent}/>
     <div className='flex flex-col items-center pt-4 px-32 gap-28 pb-20  overflow-scroll scroll-hide '>
     <div ref={scrollToRef1}>
@@ -95,9 +111,13 @@ function App() {
      <ProjectSection/>
      
      <div ref={scrollToRef3}>
-     <WorkExperienceSection/>
      </div>
+     <WorkExperienceSection/>
+     
     </div>
+    </div>
+    }
+   
     </>
   );
 }

@@ -8,12 +8,12 @@ function HeroSection() {
   return (
     <>
         <div className='flex flex-col text-white gap-2 w-[100%]'>
-        <p style={{fontFamily:"barlow",fontSize:"60px",fontWeight:"600",width:"80%",lineHeight:"78px"}}>Hi, Iam Harish. Software Engineer & Full Stack developer</p>
+        <p style={{fontFamily:"barlow",fontSize:"60px",fontWeight:"600",width:"80%",lineHeight:"78px"}}>Hi, I am Harish. Software Engineer & Full Stack developer</p>
         <p style={{fontFamily:"barlow",fontSize:"24px",fontWeight:"400",width:"90%",lineHeight:"30px",color:"#B5BAC4"}}>With a passion for crafting seamless digital solutions, I love turning ideas into functional, user-friendly applications.</p>
         
         <div className='flex w-[100%] items-center justify-between'>
         <div  className='w-[625px]   bg-[#373B44] rounded border border-[#444955]'>
-        <img alt='' src={dp}  className=' rounded grayscale-[100%] hover:grayscale-0 transition-all' />
+        <img alt='' src={dp}  className=' rounded grayscale-[100%] hover:cursor-pointer hover:grayscale-0 transition-all' />
         </div>
 
         <div onClick={previewFile} class=" mr-60 hover:cursor-pointer relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
