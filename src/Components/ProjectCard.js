@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProjectCard({style,name,desc,link,img,logo}) {
   return (
-    <div style={style} className='w-[575px] h-[430px] bg-gray-800 rounded border border-[#444955] hover:animate-pulse'>
+    <div style={style} className='w-[575px] h-[430px]  rounded border border-[#444955] hover:animate-pulse'>
          <img alt='' src={img} className='w-[100%] h-[60%] rounded border border-[#444955]'/>
          
          <div className='w-[100%]'>

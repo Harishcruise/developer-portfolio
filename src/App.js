@@ -5,20 +5,28 @@ import ProjectSection from './Components/ProjectSection';
 import React, {useEffect, useRef, useState} from 'react';
 import CustomCursor from './Assets/cursor.svg'
 import WorkExperienceSection from './Components/WorkExperienceSection';
+import Footer from './Components/Footer';
+import loader from './Assets/Loader.gif'
 
 function App() {
 
   const [showMobileWarning, setShowMobileWarning] = useState(false)
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
+    scrollToRef1.current.scrollIntoView({behavior:"smooth"})
     if(window.innerWidth <= 800)
       setShowMobileWarning(true)
   }, [])
+
+  // setTimeout(()=>{
+  //   setLoading(false);
+  // },[1500])
 
   const scrollToRef1 = useRef();
   const scrollToRef2 = useRef();
   const scrollToRef3 = useRef();
 
-  const [count,setCount] = useState(1);
+  const [count,setCount] = useState(2);
   const [percent, setPercent] = useState(0);
 
   const refs = {
@@ -67,9 +75,9 @@ function App() {
     setCount(count-1)
     var num = count - 1;
     if(num <= 0){
-      setCount(1);
-    }else if(num >= 4){
       setCount(3);
+    }else if(num >= 4){
+      setCount(1);
     }else{
       setCount(num)
     }
@@ -80,9 +88,9 @@ function App() {
     reft.current.scrollIntoView({behavior:"smooth"})
     var num = count + 1;
     if(num <= 0){
-      setCount(1);
-    }else if(num >= 4){
       setCount(3);
+    }else if(num >= 4){
+      setCount(1);
     }else{
       setCount(num)
     }
@@ -97,8 +105,6 @@ function App() {
         <p style={{fontFamily:"barlow",fontSize:"20px",position:"relative"}}>View in Desktop View</p>
         </div>
    </div> :
-
-   
    <div >
    <Header handleLeft={scrollHandleLeft} handleRight={scrollHandleRight} percent={percent}/>
     <div className='flex flex-col items-center pt-4 px-32 gap-28 pb-20  overflow-scroll scroll-hide '>
@@ -115,6 +121,8 @@ function App() {
      <WorkExperienceSection/>
      
     </div>
+
+    <Footer/>
     </div>
     }
    

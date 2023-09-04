@@ -13,6 +13,7 @@ body {
   /* background-image: url("https://cdn.discordapp.com/attachments/1038329663187062804/1143424490873823242/Psycho_Deliverance_Stunning_interpretation_in_epic_dynamic_dram_8d3e3a0f-4afa-40f1-94ec-0ca03c75d9b2.png"); */
   background-color: #191B1F;
   background-size: cover;
+  cursor: url(cursor.png), auto;
 }
 
 body::-webkit-scrollbar {
